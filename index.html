@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: #ffffff;
+            background: rgb(113,170,80);
+            background: linear-gradient(90deg, rgba(113,170,80,1) 8%, rgba(42,224,105,1) 48%, rgba(45,214,144,1) 72%);
             color: #000000;
         }
 
 
         body.dark-mode {
-            background-color: #333333;
-            color: #ffffff;
-        }
+            background: rgb(3,39,101);
+background: linear-gradient(90deg, rgba(3,39,101,1) 11%, rgba(0,34,70,1) 50%, rgba(57,5,28,1) 100%);
+             color: #ffffff;
+             }
 
 
         #dark-mode-toggle {
@@ -59,17 +61,18 @@
             position: absolute;
             left: 10px;
         }
+        
     </style>
 </head>
 <body>
     
-    <div class="container">
+    <div class="container justify-content-center align-items-center">
 
 
         <h3 class="fw-bold ms">Memory Card Game</h3>
         <p>A game that will test your photographic memory</p>
 
-        <p>Dark mode 👇</p>
+        <p>Change background-color 👇</p>
         <div id="dark-mode-toggle" onclick="toggleDarkMode()">
             <div id="slider"></div>
             <span id="toggle-text">Dark Mode</span>
